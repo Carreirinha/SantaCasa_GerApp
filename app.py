@@ -3,7 +3,7 @@ from flask_pymongo import PyMongo
 from datetime import datetime
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/seu_banco_de_dados"
+app.config["MONGO_URI"] = "mongodb://mongo:27017/mydatabase"
 mongo = PyMongo(app)
 
 users_collection = mongo.db.users
